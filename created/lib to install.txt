@@ -1,0 +1,10 @@
+The project’s third-party Python libraries are listed in requirements.txt:
+
+numpy
+pandas
+scikit-learn (imported in code as sklearn)
+streamlit
+From the project folder, install them into its virtual environment with:
+
+
+pickle, pathlib, re, sqlite3,contextlib, and datetime are part of Python’s standard library. database is a project file, not a package to download. NLTK, spaCy, Flask, and Jupyter are mentioned as possibilities in the synopsis but are not required by the current code.

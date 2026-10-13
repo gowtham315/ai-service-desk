@@ -1,0 +1,16 @@
+description,category,priority
+"My laptop screen goes black randomly and won't turn on",Hardware,High
+"Unable to connect to office Wi-Fi network from conference room",Network,Medium
+"Forgotten password for domain account, need reset urgently",Account/Access,High
+"Outlook crashes every time I try to open an attachment",Email/Collaboration,Medium
+"Database query timing out on production environment, critical system down",Database/Data,Critical
+"Request access to Jira board for new project team member",Account/Access,Low
+"Need new mouse and mechanical keyboard for desk workstation",Hardware,Low
+"VPN connection dropping intermittently during remote work",Network,Medium
+"Email server throwing 500 internal server error during broadcast",Email/Collaboration,High
+"PostgreSQL connection refused error on staging environment",Database/Data,Medium
+"Monitor flickering when connected via HDMI adapter",Hardware,Low
+"Cannot log into ERP portal, invalid credentials error",Account/Access,High
+"Teams app audio cutting out during client calls",Email/Collaboration,Medium
+"Main router in floor 3 server room overheating and down",Network,Critical
+"Need MySQL read replica access for reporting task",Database/Data,Low

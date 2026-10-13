@@ -1,0 +1,20 @@
+What the Project Does
+This is a small AI-assisted help desk. A user describes an IT problem, and 
+the app predicts its category (such as Network or Hardware) and priority (such as Low or Critical).
+A person can review and correct those predictions; the app saves the review for future training.
+
+It suggests classifications; it does not resolve tickets or assign them to support teams.
+
+How It Works
+Training examples: dataset.csv contains example ticket descriptions with their correct category and priority. It currently has just 15 examples.
+Training: train.py cleans the text, turns it into numeric TF-IDF features, and compares Logistic Regression, Naive Bayes, and Random Forest models. It trains separate models for category and priority and saves them in models.
+Prediction: app.py loads those saved models. When someone enters a ticket and clicks Analyze Ticket, it displays the predictions and their confidence estimates.
+Storage and review: database.py stores tickets and predictions in tickets.db. In the app’s history tab, an agent can select a ticket and save its confirmed category and priority.
+Learning from reviews: The next time you train, reviewed tickets from the database are combined with the CSV examples.
+
+Files
+app.py: Streamlit interface for entering tickets, seeing predictions, and reviewing history.
+train.py: Text preprocessing, model comparison, training, and saving model files.
+database.py: SQLite storage for tickets and agent reviews.
+dataset.csv: Original labeled training examples.
+requirements.txt: Python packages the project needs.
